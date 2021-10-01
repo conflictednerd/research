@@ -1,0 +1,131 @@
+Script started on 2021-03-22 20:48:05+0430
+]0;saeed@Saeed: ~/Desktop/university/OS/p2[01;32msaeed@Saeed[00m:[01;34m~/Desktop/university/OS/p2[00m$ blitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Example Thread-based Programs...
+Initializing Thread Scheduler...
+Plato
+    Sartre
+        Kant
+            Nietzsche
+                Aristotle
+.   .   .   .   .   
+    .   .   .   .   
+E   .   .   .   .   
+.   .   .   .   .   
+.       .   .   .   
+.   E   .   .   .   
+.   E       .   .   
+.   E           .   
+.   E       E   .   
+.   E       E       
+    E       E       
+    .       E       
+    .       .       
+            .       
+    E       .       
+    E       .   E   
+    E           E   
+    .           E   
+    .           .   
+    .   E       .   
+E   .   E       .   
+E       E       .   
+E       .       .   
+.       .       .   
+.       .           
+.       .       E   
+.               E   
+.       E       E   
+        E       E   
+        E       .   
+        .       .   
+        .           
+        .       E   
+    E   .       E   
+    E           E   
+    E           .   
+    .           .   
+E   .           .   
+E   .       E   .   
+E   .       E       
+E           E       
+.           E       
+.           .       
+.   E       .       
+    E       .       
+    E       .   E   
+    E           E   
+    .           E   
+    .           .   
+                .   
+    E           .   
+    E       E   .   
+    .       E   .   
+    .       E       
+            E       
+    E       E       
+    E       .       
+    .       .       
+    .               
+    .       E       
+E   .       E       
+E           E       
+E           .       
+.           .       
+.           .   E   
+.               E   
+.       E       E   
+        E       E   
+        E       .   
+        .       .   
+        .           
+        .       E   
+    E   .       E   
+    E   .       .   
+    E           .   
+    .           .   
+    .               
+    .           E   
+    .   E       E   
+    .   E       .   
+    .   .       .   
+E   .   .       .   
+E   .   .   E   .   
+E   .       E   .   
+.   .       E   .   
+.   .       .   .   
+    .       .   .   
+E   .       .   .   
+E   .           .   
+E   .       E   .   
+.   .       E   .   
+.   .       .   .   
+    .       .   .   
+E   .       .   .   
+E   .           .   
+E   .       E   .   
+.   .       E   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   .   .   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   .   .   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   .   .   .   
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 494184
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 494184
+]0;saeed@Saeed: ~/Desktop/university/OS/p2[01;32msaeed@Saeed[00m:[01;34m~/Desktop/university/OS/p2[00m$ exit
+exit
+
+Script done on 2021-03-22 20:48:17+0430

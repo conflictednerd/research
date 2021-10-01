@@ -1,0 +1,318 @@
+Script started on 2021-04-23 16:39:31+0430
+]0;saeed@Saeed: ~/Desktop/university/OS/p3[01;32msaeed@Saeed[00m:[01;34m~/Desktop/university/OS/p3[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+]0;saeed@Saeed: ~/Desktop/university/OS/p3[01;32msaeed@Saeed[00m:[01;34m~/Desktop/university/OS/p3[00m$ blitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+-----        |      -    -    -    -    -    -    E    -    -    -  
+X----        |      -    -    -    -    -    -    S    -    -    -  
+-----  start |      -    -    -    -    -    -    S    -    -    -  
+-----  ***   |      -    -    -    -    -    -    B    -    -    -  
+-----  ***   |      -    -    -    -    -    -    *    E    -    -  
+X----  ***   |      -    -    -    -    -    -    *    S    -    -  
+X----  ***   |      E    -    -    -    -    -    *    S    -    -  
+XX---  ***   |      S    -    -    -    -    -    *    S    -    -  
+XX---  ***   |      S    E    -    -    -    -    *    S    -    -  
+XXX--  ***   |      S    S    -    -    -    -    *    S    -    -  
+XXX--  ***   |      S    S    -    -    -    -    *    S    E    -  
+XXXX-  ***   |      S    S    -    -    -    -    *    S    S    -  
+XXXX-  ***   |      S    S    E    -    -    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    *    S    S    E  
+XXXXX  ***   |      S    S    S    -    -    -    *    S    S    L  
+XXXXX  ***   |      S    S    S    E    -    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    L    -    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    -    E    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    -    L    -    *    S    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    F    S    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    L    S    S    -  
+XXXXX  end   |      S    S    S    -    -    -    -    S    S    -  
+XXXXX        |      S    S    S    -    -    E    -    S    S    -  
+XXXXX        |      S    S    S    -    -    L    -    S    S    -  
+XXXX-  start |      S    S    S    -    -    -    -    S    S    -  
+XXXX-  ***   |      S    S    S    -    -    -    -    B    S    -  
+XXXX-  ***   |      S    S    S    -    -    -    E    *    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    S    *    S    -  
+XXXXX  ***   |      S    S    S    E    -    -    S    *    S    -  
+XXXXX  ***   |      S    S    S    L    -    -    S    *    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    S    *    S    E  
+XXXXX  ***   |      S    S    S    -    -    -    S    *    S    L  
+XXXXX  ***   |      S    S    S    -    -    -    S    F    S    -  
+XXXXX  ***   |      S    S    S    -    -    -    S    L    S    -  
+XXXXX  ***   |      S    S    S    -    E    -    S    -    S    -  
+XXXXX  ***   |      S    S    S    -    L    -    S    -    S    -  
+XXXXX  end   |      S    S    S    -    -    -    S    -    S    -  
+XXXX-  start |      S    S    S    -    -    -    S    -    S    -  
+XXXX-  ***   |      B    S    S    -    -    -    S    -    S    -  
+XXXX-  ***   |      *    S    S    -    -    E    S    -    S    -  
+XXXXX  ***   |      *    S    S    -    -    S    S    -    S    -  
+XXXXX  ***   |      *    S    S    -    -    S    S    E    S    -  
+XXXXX  ***   |      *    S    S    -    -    S    S    L    S    -  
+XXXXX  ***   |      *    S    S    E    -    S    S    -    S    -  
+XXXXX  ***   |      *    S    S    L    -    S    S    -    S    -  
+XXXXX  ***   |      *    S    S    -    -    S    S    -    S    E  
+XXXXX  ***   |      *    S    S    -    -    S    S    -    S    L  
+XXXXX  ***   |      F    S    S    -    -    S    S    -    S    -  
+XXXXX  ***   |      L    S    S    -    -    S    S    -    S    -  
+XXXXX  end   |      -    S    S    -    -    S    S    -    S    -  
+XXXX-  start |      -    S    S    -    -    S    S    -    S    -  
+XXXX-  ***   |      -    B    S    -    -    S    S    -    S    -  
+XXXX-  ***   |      -    *    S    -    -    S    S    E    S    -  
+XXXXX  ***   |      -    *    S    -    -    S    S    S    S    -  
+XXXXX  ***   |      -    *    S    -    E    S    S    S    S    -  
+XXXXX  ***   |      -    *    S    -    L    S    S    S    S    -  
+XXXXX  ***   |      -    *    S    E    -    S    S    S    S    -  
+XXXXX  ***   |      -    *    S    L    -    S    S    S    S    -  
+XXXXX  ***   |      -    F    S    -    -    S    S    S    S    -  
+XXXXX  ***   |      -    L    S    -    -    S    S    S    S    -  
+XXXXX  end   |      -    -    S    -    -    S    S    S    S    -  
+XXXXX        |      -    -    S    -    -    S    S    S    S    E  
+XXXXX        |      -    -    S    -    -    S    S    S    S    L  
+XXXX-  start |      -    -    S    -    -    S    S    S    S    -  
+XXXX-  ***   |      -    -    S    -    -    S    S    S    B    -  
+XXXX-  ***   |      -    -    S    -    E    S    S    S    *    -  
+XXXXX  ***   |      -    -    S    -    S    S    S    S    *    -  
+XXXXX  ***   |      -    E    S    -    S    S    S    S    *    -  
+XXXXX  ***   |      -    L    S    -    S    S    S    S    *    -  
+XXXXX  ***   |      -    -    S    -    S    S    S    S    *    E  
+XXXXX  ***   |      -    -    S    -    S    S    S    S    *    L  
+XXXXX  ***   |      -    -    S    -    S    S    S    S    F    -  
+XXXXX  ***   |      -    -    S    -    S    S    S    S    L    -  
+XXXXX  end   |      -    -    S    -    S    S    S    S    -    -  
+XXXX-  start |      -    -    S    -    S    S    S    S    -    -  
+XXXX-  ***   |      -    -    B    -    S    S    S    S    -    -  
+XXXX-  ***   |      -    -    *    -    S    S    S    S    -    E  
+XXXXX  ***   |      -    -    *    -    S    S    S    S    -    S  
+XXXXX  ***   |      -    -    *    -    S    S    S    S    E    S  
+XXXXX  ***   |      -    -    *    -    S    S    S    S    L    S  
+XXXXX  end   |      -    -    *    -    S    S    S    S    -    S  
+XXXX-  start |      -    -    *    -    S    S    S    S    -    S  
+XXXX-  ***   |      -    -    F    -    S    S    S    S    -    S  
+XXXX-  ***   |      -    -    L    -    S    S    S    S    -    S  
+XXXX-  ***   |      -    -    -    -    S    S    B    S    -    S  
+XXXX-  ***   |      -    -    -    -    S    S    *    S    E    S  
+XXXXX  ***   |      -    -    -    -    S    S    *    S    S    S  
+XXXXX  ***   |      -    -    E    -    S    S    *    S    S    S  
+XXXXX  ***   |      -    -    L    -    S    S    *    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    S    F    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    S    L    S    S    S  
+XXXXX  end   |      -    -    -    -    S    S    -    S    S    S  
+XXXX-  start |      -    -    -    -    S    S    -    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    B    -    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    *    E    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    *    S    S    S    S  
+XXXXX  ***   |      -    -    E    -    S    *    S    S    S    S  
+XXXXX  ***   |      -    -    L    -    S    *    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    F    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    L    S    S    S    S  
+XXXXX  end   |      -    -    -    -    S    -    S    S    S    S  
+XXXX-  start |      -    -    -    -    S    -    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    B    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    F    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    L    S    S  
+XXXX-  end   |      -    -    -    -    S    -    S    -    S    S  
+XXX--  start |      -    -    -    -    S    -    S    -    S    S  
+XXX--  ***   |      -    -    -    -    B    -    S    -    S    S  
+XXX--  ***   |      -    -    -    -    *    E    S    -    S    S  
+XXXX-  ***   |      -    -    -    -    *    S    S    -    S    S  
+XXXX-  ***   |      -    -    -    -    *    S    S    E    S    S  
+XXXXX  ***   |      -    -    -    -    *    S    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    F    S    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    L    S    S    S    S    S  
+XXXXX  end   |      -    -    -    -    -    S    S    S    S    S  
+XXXX-  start |      -    -    -    -    -    S    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    B  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    F  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    L  
+XXXX-  end   |      -    -    -    -    -    S    S    S    S    -  
+XXX--  start |      -    -    -    -    -    S    S    S    S    -  
+XXX--  ***   |      -    -    -    -    E    S    S    S    S    -  
+XXXX-  ***   |      -    -    -    -    S    S    S    S    S    -  
+XXXX-  ***   |      -    -    -    -    S    S    S    S    B    -  
+XXXX-  ***   |      -    -    -    -    S    S    S    S    *    E  
+XXXXX  ***   |      -    -    -    -    S    S    S    S    *    S  
+XXXXX  end   |      -    -    -    -    S    S    S    S    *    S  
+XXXX-  start |      -    -    -    -    S    S    S    S    *    S  
+XXXX-  ***   |      -    -    -    -    S    S    S    S    F    S  
+XXXX-  ***   |      -    -    -    -    S    S    S    S    L    S  
+XXXX-  ***   |      -    -    -    -    S    S    B    S    -    S  
+XXXX-  ***   |      -    -    -    -    S    S    *    S    E    S  
+XXXXX  ***   |      -    -    -    -    S    S    *    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    S    F    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    S    L    S    S    S  
+XXXXX  end   |      -    -    -    -    S    S    -    S    S    S  
+XXXX-  start |      -    -    -    -    S    S    -    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    B    -    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    *    E    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    *    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    F    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    S    L    S    S    S    S  
+XXXXX  end   |      -    -    -    -    S    -    S    S    S    S  
+XXXX-  start |      -    -    -    -    S    -    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    B    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    F    S    S  
+XXXX-  ***   |      -    -    -    -    S    -    S    L    S    S  
+XXXX-  end   |      -    -    -    -    S    -    S    -    S    S  
+XXX--  start |      -    -    -    -    S    -    S    -    S    S  
+XXX--  ***   |      -    -    -    -    B    -    S    -    S    S  
+XXX--  ***   |      -    -    -    -    *    E    S    -    S    S  
+XXXX-  ***   |      -    -    -    -    *    S    S    -    S    S  
+XXXX-  ***   |      -    -    -    -    *    S    S    E    S    S  
+XXXXX  ***   |      -    -    -    -    *    S    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    F    S    S    S    S    S  
+XXXXX  ***   |      -    -    -    -    L    S    S    S    S    S  
+XXXXX  end   |      -    -    -    -    -    S    S    S    S    S  
+XXXX-  start |      -    -    -    -    -    S    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    B  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    F  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    L  
+XXXX-  end   |      -    -    -    -    -    S    S    S    S    -  
+XXX--  start |      -    -    -    -    -    S    S    S    S    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    B    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    *    E  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    *    S  
+XXXX-  end   |      -    -    -    -    -    S    S    S    *    S  
+XXX--  start |      -    -    -    -    -    S    S    S    *    S  
+XXX--  ***   |      -    -    -    -    -    S    S    S    F    S  
+XXX--  ***   |      -    -    -    -    -    S    S    S    L    S  
+XXX--  ***   |      -    -    -    -    -    S    B    S    -    S  
+XXX--  ***   |      -    -    -    -    -    S    *    S    E    S  
+XXXX-  ***   |      -    -    -    -    -    S    *    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    F    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    L    S    S    S  
+XXXX-  end   |      -    -    -    -    -    S    -    S    S    S  
+XXX--  start |      -    -    -    -    -    S    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    B    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    *    E    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    *    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    F    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    L    S    S    S    S  
+XXXX-  end   |      -    -    -    -    -    -    S    S    S    S  
+XXX--  start |      -    -    -    -    -    -    S    S    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    B    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    F    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    L    S    S  
+XXX--  end   |      -    -    -    -    -    -    S    -    S    S  
+XX---  start |      -    -    -    -    -    -    S    -    S    S  
+XX---  ***   |      -    -    -    -    -    -    S    -    S    B  
+XX---  ***   |      -    -    -    -    -    E    S    -    S    *  
+XXX--  ***   |      -    -    -    -    -    S    S    -    S    *  
+XXX--  ***   |      -    -    -    -    -    S    S    E    S    *  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    *  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    F  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    L  
+XXXX-  end   |      -    -    -    -    -    S    S    S    S    -  
+XXX--  start |      -    -    -    -    -    S    S    S    S    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    B    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    *    E  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    *    S  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    F    S  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    L    S  
+XXXX-  end   |      -    -    -    -    -    S    S    S    -    S  
+XXX--  start |      -    -    -    -    -    S    S    S    -    S  
+XXX--  ***   |      -    -    -    -    -    S    B    S    -    S  
+XXX--  ***   |      -    -    -    -    -    S    *    S    E    S  
+XXXX-  ***   |      -    -    -    -    -    S    *    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    F    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    L    S    S    S  
+XXXX-  end   |      -    -    -    -    -    S    -    S    S    S  
+XXX--  start |      -    -    -    -    -    S    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    B    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    *    E    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    *    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    F    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    L    S    S    S    S  
+XXXX-  end   |      -    -    -    -    -    -    S    S    S    S  
+XXX--  start |      -    -    -    -    -    -    S    S    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    B    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    F    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    L    S    S  
+XXX--  end   |      -    -    -    -    -    -    S    -    S    S  
+XX---  start |      -    -    -    -    -    -    S    -    S    S  
+XX---  ***   |      -    -    -    -    -    -    S    -    S    B  
+XX---  ***   |      -    -    -    -    -    E    S    -    S    *  
+XXX--  ***   |      -    -    -    -    -    S    S    -    S    *  
+XXX--  ***   |      -    -    -    -    -    S    S    E    S    *  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    *  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    F  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    S    L  
+XXXX-  end   |      -    -    -    -    -    S    S    S    S    -  
+XXX--  start |      -    -    -    -    -    S    S    S    S    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    B    -  
+XXX--  ***   |      -    -    -    -    -    S    S    S    *    E  
+XXXX-  ***   |      -    -    -    -    -    S    S    S    *    S  
+XXXX-  end   |      -    -    -    -    -    S    S    S    *    S  
+XXX--  start |      -    -    -    -    -    S    S    S    *    S  
+XXX--  ***   |      -    -    -    -    -    S    S    S    F    S  
+XXX--  ***   |      -    -    -    -    -    S    S    S    L    S  
+XXX--  ***   |      -    -    -    -    -    S    B    S    -    S  
+XXX--  ***   |      -    -    -    -    -    S    *    S    E    S  
+XXXX-  ***   |      -    -    -    -    -    S    *    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    F    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    S    L    S    S    S  
+XXXX-  end   |      -    -    -    -    -    S    -    S    S    S  
+XXX--  start |      -    -    -    -    -    S    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    B    -    S    S    S  
+XXX--  ***   |      -    -    -    -    -    *    E    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    *    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    F    S    S    S    S  
+XXXX-  ***   |      -    -    -    -    -    L    S    S    S    S  
+XXXX-  end   |      -    -    -    -    -    -    S    S    S    S  
+XXX--  start |      -    -    -    -    -    -    S    S    S    S  
+XXX--  ***   |      -    -    -    -    -    -    S    B    S    S  
+XXX--  end   |      -    -    -    -    -    -    S    *    S    S  
+XX---  start |      -    -    -    -    -    -    S    *    S    S  
+XX---  ***   |      -    -    -    -    -    -    S    F    S    S  
+XX---  ***   |      -    -    -    -    -    -    S    L    S    S  
+XX---  ***   |      -    -    -    -    -    -    S    -    S    B  
+XX---  ***   |      -    -    -    -    -    -    S    E    S    *  
+XXX--  ***   |      -    -    -    -    -    -    S    S    S    *  
+XXX--  ***   |      -    -    -    -    -    -    S    S    S    F  
+XXX--  ***   |      -    -    -    -    -    -    S    S    S    L  
+XXX--  end   |      -    -    -    -    -    -    S    S    S    -  
+XX---  start |      -    -    -    -    -    -    S    S    S    -  
+XX---  ***   |      -    -    -    -    -    -    S    S    B    -  
+XX---  end   |      -    -    -    -    -    -    S    S    *    -  
+X----  start |      -    -    -    -    -    -    S    S    *    -  
+X----  ***   |      -    -    -    -    -    -    S    S    F    -  
+X----  ***   |      -    -    -    -    -    -    S    S    L    -  
+X----  ***   |      -    -    -    -    -    -    B    S    -    -  
+X----  ***   |      -    -    -    -    -    -    *    S    E    -  
+XX---  ***   |      -    -    -    -    -    -    *    S    S    -  
+XX---  ***   |      -    -    -    -    -    -    F    S    S    -  
+XX---  ***   |      -    -    -    -    -    -    L    S    S    -  
+XX---  end   |      -    -    -    -    -    -    -    S    S    -  
+X----  start |      -    -    -    -    -    -    -    S    S    -  
+X----  ***   |      -    -    -    -    -    -    -    B    S    -  
+X----  end   |      -    -    -    -    -    -    -    *    S    -  
+-----  start |      -    -    -    -    -    -    -    *    S    -  
+-----  ***   |      -    -    -    -    -    -    -    F    S    -  
+-----  ***   |      -    -    -    -    -    -    -    L    S    -  
+-----  ***   |      -    -    -    -    -    -    -    -    B    -  
+-----  ***   |      -    -    -    -    -    -    -    -    F    -  
+-----  ***   |      -    -    -    -    -    -    -    -    L    -  
+-----  end   |      -    -    -    -    -    -    -    -    -    -  
+-----        |      -    -    -    -    -    -    -    -    E    -  
+X----        |      -    -    -    -    -    -    -    -    S    -  
+-----  start |      -    -    -    -    -    -    -    -    S    -  
+-----  ***   |      -    -    -    -    -    -    -    -    B    -  
+-----  end   |      -    -    -    -    -    -    -    -    *    -  
+-----        |      -    -    -    -    -    -    -    -    F    -  
+-----        |      -    -    -    -    -    -    -    -    L    -  
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 15862703
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 15862703
+]0;saeed@Saeed: ~/Desktop/university/OS/p3[01;32msaeed@Saeed[00m:[01;34m~/Desktop/university/OS/p3[00m$ exit
+exit
+
+Script done on 2021-04-23 16:39:46+0430
